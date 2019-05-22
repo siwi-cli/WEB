@@ -1,6 +1,6 @@
 apps:
   - script : index.js
-    name: template.gzh.ink
+    name: siwi-template-web
     watch  : true
     env    :
       NODE_ENV: development

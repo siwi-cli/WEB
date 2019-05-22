@@ -1,0 +1,25 @@
+extends ../common/auth_layout
+block title
+  title 登录
+append style
+  link(href="dist/css/main.css", rel="stylesheet")
+  
+block content
+  .container
+    .col-md-4.offset-4.login-border
+      div.login-panel
+          h1.login-panel-header 登录
+          img(src="images/test.png", alt="a" class="login-panel-img")
+      form(@submit.prevent="login")
+        .form-group
+          label(for="") 账号
+          input(type="text" class="form-control" v-model="username")
+        .form-group
+          label(for="") 密码
+          input(type="password" class="form-control" v-model="password")
+        .form-check
+          input(type="checkbox" class="form-check-input")
+          label(for="" class="form-check-label") 记住密码
+        button.btn.btn-primary.btn-block(type="submit") 登录
+append script
+  script(src="dist/js/auth.js")

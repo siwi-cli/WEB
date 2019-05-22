@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    block title
+      title Template
+    block style
+      link(rel="stylesheet", href="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/css/bootstrap.min.css")
+  body
+    #app
+      nav.navbar.navbar-expand-lg.navbar-dark.bg-dark
+        a.navbar-brand(href='/')
+          img(src="images/test.png", alt="alt" width="36")
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbarTogglerDemo02', aria-controls='navbarToggler', aria-expanded='false', aria-label='Toggle navigation')
+          span.navbar-toggler-icon
+        .collapse.navbar-collapse#navbarToggler
+          ul.navbar-nav.mr-auto.mt-2.mt-lg-0
+            li.nav-item.active
+              a.nav-link(href='/services')
+                | 服务
+                span.sr-only (current)
+            li.nav-item
+              a.nav-link(href='/development') 开发
+            li.nav-item
+              a.nav-link.disabled(href='#') Disabled
+          form.form-inline.my-2.my-lg-0
+            input.form-control.mr-sm-2(type='search', placeholder='Search')
+            button.btn.btn-outline-success.my-2.my-sm-0(type='submit') Search
+      block content
+
+    block script
+      script(src="https://cdn.bootcss.com/jquery/3.3.1/jquery.slim.min.js")
+      script(src="https://cdn.bootcss.com/twitter-bootstrap/4.3.1/js/bootstrap.min.js")
+      script(src="https://cdn.bootcss.com/vue/2.6.6/vue.min.js")
+      script(src="https://cdn.bootcss.com/axios/0.19.0-beta.1/axios.min.js")
+      script(src="https://cdn.bootcss.com/qs/6.6.0/qs.min.js")

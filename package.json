@@ -1,0 +1,33 @@
+{
+  "name": "template.gzh.ink",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "dependencies": {
+    "got": "^9.6.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-logger": "^3.2.0",
+    "koa-router": "^7.4.0",
+    "koa-session": "^5.10.1",
+    "koa-static": "^5.0.0",
+    "koa-views": "^6.1.5",
+    "koa2-cors": "^2.0.6",
+    "pug": "^2.0.3"
+  },
+  "scripts": {
+    "start": "webpack --watch",
+    "dev": "node index.js"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.4.10",
+    "css-loader": "^2.1.0",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "postcss-loader": "^3.0.0",
+    "style-loader": "^0.23.1",
+    "stylus": "^0.54.5",
+    "stylus-loader": "^3.0.2",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.2.3"
+  }
+}

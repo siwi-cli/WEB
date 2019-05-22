@@ -1,0 +1,10 @@
+extends ../common/layout.pug
+block title
+  title Home
+block content
+  .container
+    h1(v-text="title")
+    p(v-text="name")
+    img(src="images/test.png", alt="", srcset="")
+append script
+  script(src="dist/js/home.js")
